@@ -1,0 +1,12 @@
+librosa
+huggingface-hub
+munch
+einops
+pydub
+descript-audio-codec
+soundfile
+sounddevice
+funasr
+hydra-core
+pyyaml
+python-dotenv

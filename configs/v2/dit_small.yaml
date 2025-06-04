@@ -1,0 +1,17 @@
+_target_: modules.v2.cfm.CFM
+estimator:
+  _target_: modules.v2.dit_wrapper.DiT
+  time_as_token: true
+  style_as_token: true
+  uvit_skip_connection: false
+  block_size: 8192
+  depth: 13
+  num_heads: 8
+  hidden_dim: 512
+  in_channels: 80
+  content_dim: 512
+  style_encoder_dim: 192
+  class_dropout_prob: 0.1
+  dropout_rate: 0.0
+  attn_dropout_rate: 0.0
+
