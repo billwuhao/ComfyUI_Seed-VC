@@ -1,0 +1,15 @@
+[project]
+name = "seed-vc-mw"
+description = "Seed-VC: Very quickly convert `speech` or `singing` into another person's voice, without changing the content rhythm"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/billwuhao/ComfyUI_Seed-VC"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "mw"
+DisplayName = "ComfyUI_Seed-VC"
+Icon = ""
