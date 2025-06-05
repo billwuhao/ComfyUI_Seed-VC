@@ -57,12 +57,12 @@ def get_norm_module(module: nn.Module, causal: bool = False, norm: str = 'none',
     """
     assert norm in CONV_NORMALIZATIONS
     if norm == 'layer_norm':
-        assert isinstance(module, nn.modules.conv._ConvNd)
+        assert isinstance(module, nn.seed_vc.modules.conv._ConvNd)
         return ConvLayerNorm(module.out_channels, **norm_kwargs)
     elif norm == 'time_group_norm':
         if causal:
             raise ValueError("GroupNorm doesn't support causal evaluation.")
-        assert isinstance(module, nn.modules.conv._ConvNd)
+        assert isinstance(module, nn.seed_vc.modules.conv._ConvNd)
         return nn.GroupNorm(1, module.out_channels, **norm_kwargs)
     else:
         return nn.Identity()

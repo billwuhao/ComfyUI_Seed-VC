@@ -12,11 +12,11 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
     sys.path.append(current_dir)
 
-from modules.commons import build_model, load_checkpoint, recursive_munch
-from modules.campplus.DTDNN import CAMPPlus
-from modules.bigvgan import bigvgan
-from modules.audio import mel_spectrogram
-from modules.rmvpe import RMVPE
+from seed_vc.modules.commons import build_model, load_checkpoint, recursive_munch
+from seed_vc.modules.campplus.DTDNN import CAMPPlus
+from seed_vc.modules.bigvgan import bigvgan
+from seed_vc.modules.audio import mel_spectrogram
+from seed_vc.modules.rmvpe import RMVPE
 
 cache_dir = folder_paths.get_temp_directory()
 models_dir = folder_paths.models_dir

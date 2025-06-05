@@ -2,9 +2,9 @@ import torch
 from torch import nn
 import math
 
-# from modules.torchscript_modules.gpt_fast_model import ModelArgs, Transformer
-from modules.wavenet import WN
-from modules.commons import sequence_mask
+# from seed_vc.modules.torchscript_seed_vc.modules.gpt_fast_model import ModelArgs, Transformer
+from seed_vc.modules.wavenet import WN
+from seed_vc.modules.commons import sequence_mask
 
 from torch.nn.utils import weight_norm
 

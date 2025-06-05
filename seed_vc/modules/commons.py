@@ -386,8 +386,8 @@ def normalize_f0(f0_sequence):
 
 def build_model(args, stage="DiT"):
     if stage == "DiT":
-        from modules.flow_matching import CFM
-        from modules.length_regulator import InterpolateRegulator
+        from seed_vc.modules.flow_matching import CFM
+        from seed_vc.modules.length_regulator import InterpolateRegulator
 
         length_regulator = InterpolateRegulator(
             channels=args.length_regulator.channels,

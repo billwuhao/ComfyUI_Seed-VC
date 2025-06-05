@@ -2,9 +2,9 @@ import sys
 
 import argbind
 
-from dac.utils import download
-from dac.utils.decode import decode
-from dac.utils.encode import encode
+from seed_vc.dac.utils import download
+from seed_vc.dac.utils.decode import decode
+from seed_vc.dac.utils.encode import encode
 
 STAGES = ["encode", "decode", "download"]
 

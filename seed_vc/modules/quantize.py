@@ -1,6 +1,6 @@
-from dac.nn.quantize import ResidualVectorQuantize
+from seed_vc.dac.nn.quantize import ResidualVectorQuantize
 from torch import nn
-from modules.wavenet import WN
+from seed_vc.modules.wavenet import WN
 import torch
 import torchaudio
 import torchaudio.functional as audio_F
@@ -9,7 +9,7 @@ from .alias_free_torch import *
 from torch.nn.utils import weight_norm
 from torch import nn, sin, pow
 from einops.layers.torch import Rearrange
-from dac.model.encodec import SConv1d
+from seed_vc.dac.model.encodec import SConv1d
 
 def init_weights(m):
     if isinstance(m, nn.Conv1d):

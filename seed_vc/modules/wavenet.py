@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from modules.encodec import SConv1d
+from seed_vc.modules.encodec import SConv1d
 
 from . import commons
 LRELU_SLOPE = 0.1

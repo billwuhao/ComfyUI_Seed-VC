@@ -2,8 +2,8 @@ import torch
 from torch import nn
 import math
 
-from modules.v2.dit_model import ModelArgs, Transformer
-from modules.commons import sequence_mask
+from seed_vc.modules.v2.dit_model import ModelArgs, Transformer
+from seed_vc.modules.commons import sequence_mask
 
 from torch.nn.utils import weight_norm
 
