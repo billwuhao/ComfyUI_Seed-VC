@@ -1,7 +1,7 @@
 [project]
 name = "seed-vc-mw"
 description = "Seed-VC: Very quickly convert `speech` or `singing` into another person's voice, without changing the content rhythm"
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 dependencies = []
 
