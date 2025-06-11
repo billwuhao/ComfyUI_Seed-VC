@@ -33,13 +33,48 @@ pip install -r requirements.txt
 - [campplus_cn_common.bin](https://huggingface.co/funasr/campplus/blob/main/campplus_cn_common.bin)
 - [rmvpe.pt](https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/rmvpe.pt)
 
-手动下载文件夹放到 `ComfyUI\models\TTS` 路径下的模型:
+```
+.
+    campplus_cn_common.bin
+    DiT_seed_v2_uvit_whisper_base_f0_44k_bigvgan_pruned_ft_ema.pth
+    DiT_seed_v2_uvit_whisper_small_wavenet_bigvgan_pruned.pth
+    rmvpe.pt
+```
 
-- [bigvgan_v2_22khz_80band_256x](https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/tree/main) 只需要 `bigvgan_generator.pt` 文件和参数代码文件.
+手动下载 **文件夹** 放到 `ComfyUI\models\TTS` 路径下:
 
-- [bigvgan_v2_44khz_128band_512x](https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x/tree/main) 只需要 `bigvgan_generator.pt` 文件和参数代码文件.
+- [bigvgan_v2_22khz_80band_256x](https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/tree/main) 只需要 `bigvgan_generator.pt` 文件和参数文件.
 
-- [whisper-small](https://huggingface.co/openai/whisper-small/tree/main) 只需要 `model.safetensors` 文件和 `.json` 等参数小文件.
+```
+    .
+    │  bigvgan_generator.pt
+    │  config.json
+```
+
+- [bigvgan_v2_44khz_128band_512x](https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x/tree/main) 只需要 `bigvgan_generator.pt` 文件和参数文件.
+
+```
+    .
+    │  bigvgan_generator.pt
+    │  config.json
+```
+
+- [whisper-small](https://huggingface.co/openai/whisper-small/tree/main) 只需要 `model.safetensors` 文件和 `.json`, 参数小文件.
+
+```
+.
+    added_tokens.json
+    config.json
+    generation_config.json
+    merges.txt
+    model.safetensors
+    normalizer.json
+    preprocessor_config.json
+    special_tokens_map.json
+    tokenizer.json
+    tokenizer_config.json
+    vocab.json
+```
 
 ## 鸣谢
 
